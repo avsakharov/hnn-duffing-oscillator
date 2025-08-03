@@ -9,7 +9,6 @@ from tqdm.notebook import tqdm
 def setup_plot_style():
     plt.rcParams.update({
         "figure.dpi": 100,
-        "savefig.dpi": 300,
         "font.size": 12,
         "axes.labelsize": 12,
         "axes.titlesize": 13,
