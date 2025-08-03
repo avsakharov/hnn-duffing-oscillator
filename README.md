@@ -54,14 +54,14 @@ where $u$ and $v$ represent the coordinate and velocity, respectively, $\gamma$ 
 The following plots compare Poincaré sections for the case $\gamma = 0$ and two values of $\varepsilon$. The HamiltonianNN correctly captures the qualitative structure of the flow in phase space and produces Poincaré sections that closely resemble the numerical results. BaselineNN, however, fails to replicate the Hamiltonian structure of the system.
 
 <p align="center">
-  <img src="images/poincare_sections_gamma=0_epsilon=0.05.png" alt="Poincare sections gamma=0 epsilon=0.05" width="900"/>
-  <img src="images/poincare_sections_gamma=0_epsilon=0.1.png" alt="Poincare sections gamma=0 epsilon=0.1" width="900"/>
+  <img src="images/poincare_sections_gamma=0_epsilon=0.05.png" alt="Poincare sections for gamma=0 and epsilon=0.05" width="900"/>
+  <img src="images/poincare_sections_gamma=0_epsilon=0.1.png" alt="Poincare sections for gamma=0 and epsilon=0.1" width="900"/>
 </p>
 
 The case below corresponds to a Duffing oscillator with both dissipation and external forcing. The system exhibits a strange attractor in its Poincaré section. Since HamiltonianNN is inherently volume-preserving, it cannot model the dissipative dynamics and thus produces an incorrect Poincaré map. BaselineNN, on the other hand, accurately reproduces the strange attractor in the Poincaré section, indicating that it has effectively learned the dominant behavior of the system.
 
 <p align="center">
-  <img src="images/poincare_sections_gamma=0.15_epsilon=0.3.png" alt="Poincare sections gamma=0.15 epsilon=0.3" width="900"/>
+  <img src="images/poincare_sections_gamma=0.15_epsilon=0.3.png" alt="Poincare sections for gamma=0.15 and epsilon=0.3" width="900"/>
 </p>
 
 ## Installation
