@@ -42,7 +42,7 @@ class BaseDynamicsNN(nn.Module):
                   f"test_loss = {self.test_loss_history[-1]:.6f}")
 
     def plot_loss(self):
-        plt.figure(figsize=(6,4))
+        plt.figure(figsize=(4.5, 3))
         plt.plot(self.train_loss_history, label='Train Loss', color='tab:blue')
         plt.plot(self.test_loss_history, label='Test Loss', color='tab:orange')
         plt.yscale('log')

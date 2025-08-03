@@ -134,21 +134,21 @@ def plot_phase_trajectories(system, bnn, hnn, x0_values):
         ("HamiltonianNN", lambda: system.simulate_trajectories_by_model(hnn, x0_values)),
     )
 
-    _, axes = plt.subplots(3, 1, figsize=(6, 14))
+    fig, axes = plt.subplots(1, 3, figsize=(10, 3.5))
 
     for ax, (title, simulate_func) in zip(axes, methods):
-        ax.set_title(f"Phase Trajectories ({title})")
-
+        ax.set_title(title)
         trajectories = simulate_func()  # (N, 2, T)
 
         for trajectory in trajectories:
-            ax.plot(trajectory[0], trajectory[1], linewidth=1.0, color='tab:blue')
+            ax.plot(trajectory[0], trajectory[1], linewidth=0.5, color='tab:blue')
 
         ax.set_xlim(-3, 3)
         ax.set_ylim(-5.5, 5.5)
         ax.set_xlabel("$q$")
         ax.set_ylabel("$p$")
 
+    fig.suptitle("Phase Trajectories", fontsize=14)
     plt.tight_layout()
     plt.show()
 
