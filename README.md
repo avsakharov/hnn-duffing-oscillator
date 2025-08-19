@@ -1,6 +1,6 @@
 # Hamiltonian Neural Network for the Duffing Oscillator
 
-This project explores the use of **Hamiltonian Neural Network** to learn and simulate the dynamics of the **Duffing oscillator** and compares their performance to baseline neural networks.
+This project explores the use of **Hamiltonian Neural Network** to learn and simulate the dynamics of the **Duffing oscillator** and compares their performance to baseline neural network.
 
 ## Overview
 
